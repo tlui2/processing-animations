@@ -1,0 +1,17 @@
+int y = 750;
+
+void setup() {
+  size(800, 800);
+}
+
+void draw() {
+  y += 0.3;
+  background(0 , 0, 200);
+  
+  fill(255, 255, 0);
+  ellipse(width/2, y, 75*y/100, 75*y/100);
+
+  fill(0, 150, 0);
+  rect(0, height-200, width, 200);
+  y = y-1;
+}
